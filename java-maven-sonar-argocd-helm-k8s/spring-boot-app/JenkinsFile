@@ -49,7 +49,6 @@ pipeline {
         environment {
             GIT_REPO_NAME = "jenkins-testcase11"
             GIT_USER_NAME = "gowrishankar330"
-"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
